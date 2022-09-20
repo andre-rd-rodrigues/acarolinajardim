@@ -42,22 +42,20 @@
         }
       }
     }
-    .links {
-      display: flex;
-
-      li {
-        margin-right: 10px;
-        min-width: 60px;
-        a {
-          color: $black;
-          &:hover {
-            color: $primary;
-          }
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin-right: 20px;
+      a {
+        color: $black;
+        &:hover {
+          color: $primary;
         }
       }
     }
   }
-
   .copyright {
     position: relative;
     padding-top: 40px;

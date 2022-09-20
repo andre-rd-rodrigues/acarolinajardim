@@ -84,7 +84,6 @@ h4,
   border-radius: 4px;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 1.4px;
   &:active,
   &:focus {
@@ -103,6 +102,7 @@ h4,
     background: $teal;
     border-color: $teal;
     color: $white;
+    text-transform: uppercase;
     &:hover {
       border-color: $green;
       background: $green;
@@ -176,7 +176,7 @@ h4,
   height: 100%;
   position: fixed;
   z-index: 7100;
-  background: #e8e5de;
+  background: $beige;
   top: 0;
   left: 0;
   right: 0;
@@ -193,7 +193,41 @@ h4,
 .position-relative {
   position: relative;
 }
+
+// Custom
 .signature {
   font-family: "Segatha";
   font-size: $font-size-l;
+}
+.more-link {
+  width: 100%;
+  color: white !important;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  padding: 7px;
+}
+
+//Serviços
+.features-section {
+  margin-bottom: 200px;
+  & h4 {
+    color: $red;
+    margin: 18px 0 30px 0;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+//Especialidades detalhadas
+.services-section {
+  background-color: $green;
+  h2,
+  p {
+    color: white;
+  }
+  .line {
+    background-color: white;
+  }
 }
