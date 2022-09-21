@@ -28,7 +28,7 @@ a {
   color: $primary;
   transition: 0.3s all ease;
   &:hover {
-    color: $primary;
+    color: $green !important;
     text-decoration: none;
   }
 }
@@ -106,6 +106,7 @@ h4,
     &:hover {
       border-color: $green;
       background: $green;
+      color: white !important;
     }
   }
   &.btn-white {
@@ -131,6 +132,10 @@ h4,
       color: $primary !important;
     }
   }
+}
+.btn-faqs {
+  letter-spacing: 0 !important;
+  font-weight: normal !important;
 }
 
 .form-control,
@@ -229,5 +234,11 @@ h4,
   }
   .line {
     background-color: white;
+  }
+}
+.wrap-icon {
+  text-align: center;
+  & img {
+    max-width: 60px;
   }
 }
