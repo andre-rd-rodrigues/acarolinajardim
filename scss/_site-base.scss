@@ -4,6 +4,7 @@ body {
   font-size: 15px;
   color: $black;
   background: $beige;
+  scroll-behavior: smooth;
   &:before {
     content: "";
     position: fixed;
