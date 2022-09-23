@@ -1,3 +1,3 @@
-# Carolina Jardim - Psicologia Clínica & Neuropsicologia
+# Carolina Jardim - Psicologia
 
 [Website: Carolina Jardim](https://www.google.com)
