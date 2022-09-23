@@ -2,7 +2,7 @@
 .section,
 .section-2,
 .section-4 {
-  padding: 100px 0;
+  padding: 60px 0;
   @include media-breakpoint-down(md) {
     padding: 50px 0;
   }
@@ -28,10 +28,15 @@
   height: 1px;
   background-color: $black;
 }
+.features-section {
+  margin-bottom: 90px;
+}
 .schedule-service {
+  margin: 130px 0;
+}
+.schedule-service-title {
   font-size: $font-size-xl-l;
 }
-
 .section-services-intermediate {
   margin: 100px 0;
 }

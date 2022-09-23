@@ -217,7 +217,6 @@ h4,
 
 //Serviços
 .features-section {
-  margin-bottom: 200px;
   & h4 {
     color: $red;
     margin: 18px 0 30px 0;
@@ -249,6 +248,10 @@ h4,
   padding: 0 20px !important;
 }
 
+#faqs {
+  margin-top: 150px;
+}
+
 @media only screen and (max-width: 600px) {
   .order-sm-1 {
     order: 1 !important;
@@ -256,19 +259,8 @@ h4,
   .order-sm-2 {
     order: 2 !important;
   }
-  #faqs {
-    h2 {
-      margin-top: 50px;
-    }
-  }
-  .schedule-service {
-    margin-top: 50px;
-  }
+
   .links {
     justify-content: space-between;
-  }
-
-  .features-section {
-    margin-bottom: 50px;
   }
 }
