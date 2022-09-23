@@ -8,7 +8,7 @@
   }
 }
 .section-services-intermediate {
-  margin: 180px 0;
+  margin: 100px 0;
 }
 .more {
   font-size: 1rem;
@@ -30,4 +30,22 @@
 }
 .schedule-service {
   font-size: $font-size-xl-l;
+}
+
+.section-services-intermediate {
+  margin: 100px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-services-intermediate {
+    margin: 50px 0;
+  }
+  .detail-section-title {
+    margin: 60px 0;
+  }
+  #detail-section-clínica {
+    .detail-section-title {
+      padding: 0 !important;
+    }
+  }
 }

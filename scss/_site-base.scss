@@ -1,10 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $font-family-body;
   line-height: 1.5;
   font-size: 15px;
   color: $black;
   background: $beige;
-  scroll-behavior: smooth;
   &:before {
     content: "";
     position: fixed;
@@ -241,5 +243,32 @@ h4,
   text-align: center;
   & img {
     max-width: 60px;
+  }
+}
+.container {
+  padding: 0 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-sm-1 {
+    order: 1 !important;
+  }
+  .order-sm-2 {
+    order: 2 !important;
+  }
+  #faqs {
+    h2 {
+      margin-top: 50px;
+    }
+  }
+  .schedule-service {
+    margin-top: 50px;
+  }
+  .links {
+    justify-content: space-between;
+  }
+
+  .features-section {
+    margin-bottom: 50px;
   }
 }
