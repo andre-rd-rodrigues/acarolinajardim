@@ -4,7 +4,7 @@ html {
 body {
   font-family: $font-family-body;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 1rem;
   color: $black;
   background: $beige;
   &:before {
@@ -28,7 +28,8 @@ body {
   }
 }
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 30px;
 }
 a {
   color: $primary;
@@ -265,5 +266,49 @@ h4,
 
   .links {
     justify-content: space-between;
+  }
+}
+
+.testimonial-quote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  background-color: $green;
+
+  blockquote {
+    color: $white;
+    font-style: italic;
+    margin: 0;
+    position: relative;
+    z-index: 600;
+    max-width: 700px;
+    text-align: end;
+    padding: 0 20px;
+    p {
+      position: relative;
+      font-family: "Bodoni Moda", sans-serif;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    cite {
+      font-size: 1rem;
+    }
+
+    p:first-child:before {
+      content: "\201C";
+      font-family: Georgia, serif;
+      color: $white;
+      font-size: 7.5em;
+      font-weight: 700;
+      opacity: 0.2;
+      position: absolute;
+      text-shadow: none;
+      z-index: -1;
+      top: 10px;
+      left: -20px;
+    }
   }
 }
