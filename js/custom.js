@@ -1,7 +1,7 @@
 AOS.init({
   duration: 800,
   easing: "slide",
-  once: true,
+  once: true
 });
 
 $(function () {
@@ -28,12 +28,12 @@ $(function () {
 
         $this.find(".arrow-collapse").attr({
           "data-toggle": "collapse",
-          "data-target": "#collapseItem" + counter,
+          "data-target": "#collapseItem" + counter
         });
 
         $this.find("> ul").attr({
           class: "collapse",
-          id: "collapseItem" + counter,
+          id: "collapseItem" + counter
         });
 
         counter++;
@@ -99,8 +99,8 @@ $(function () {
         nav: true,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
-        ],
+          '<span class="icon-keyboard_backspace"></span>'
+        ]
       });
 
       owl.on("initialized.owl.carousel", function () {
@@ -130,25 +130,25 @@ $(function () {
         dots: true,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
+          '<span class="icon-keyboard_backspace"></span>'
         ],
         responsive: {
           0: {
-            items: 1,
+            items: 1
           },
           600: {
-            items: 1,
+            items: 1
           },
           800: {
-            items: 2,
+            items: 2
           },
           1000: {
-            items: 3,
+            items: 3
           },
           1100: {
-            items: 5,
-          },
-        },
+            items: 5
+          }
+        }
       });
     }
 
@@ -165,25 +165,25 @@ $(function () {
         dots: true,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
+          '<span class="icon-keyboard_backspace"></span>'
         ],
         responsive: {
           0: {
-            items: 1,
+            items: 1
           },
           600: {
-            items: 1,
+            items: 1
           },
           800: {
-            items: 2,
+            items: 2
           },
           1000: {
-            items: 2,
+            items: 2
           },
           1100: {
-            items: 3,
-          },
-        },
+            items: 3
+          }
+        }
       });
     }
 
@@ -198,19 +198,19 @@ $(function () {
         nav: false,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
+          '<span class="icon-keyboard_backspace"></span>'
         ],
         responsive: {
           0: {
-            items: 1,
+            items: 1
           },
           600: {
-            items: 2,
+            items: 2
           },
           1000: {
-            items: 4,
-          },
-        },
+            items: 4
+          }
+        }
       });
 
       $(".js-custom-next-v2").click(function (e) {
@@ -238,8 +238,8 @@ $(function () {
         nav: false,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
-        ],
+          '<span class="icon-keyboard_backspace"></span>'
+        ]
       });
     }
     if ($(".owl-single-2").length > 0) {
@@ -253,9 +253,9 @@ $(function () {
         nav: false,
         navText: [
           '<span class="icon-keyboard_backspace"></span>',
-          '<span class="icon-keyboard_backspace"></span>',
+          '<span class="icon-keyboard_backspace"></span>'
         ],
-        onInitialized: counter,
+        onInitialized: counter
       });
 
       function counter(event) {
@@ -303,7 +303,7 @@ $(function () {
             $this.animateNumber(
               {
                 number: num,
-                numberStep: comma_separator_number_step,
+                numberStep: comma_separator_number_step
               },
               10000,
               function () {
@@ -325,7 +325,7 @@ $(function () {
 
       var data = $(this).attr("data-filter");
       $grid.isotope({
-        filter: data,
+        filter: data
       });
     });
 
@@ -334,8 +334,8 @@ $(function () {
         itemSelector: ".all",
         percentPosition: true,
         masonry: {
-          columnWidth: ".all",
-        },
+          columnWidth: ".all"
+        }
       });
 
       $grid.imagesLoaded().progress(function () {
@@ -369,7 +369,7 @@ $(function () {
       parallaxElements: true,
       horizontalScrolling: false,
       hideDistantElements: false,
-      scrollProperty: "scroll",
+      scrollProperty: "scroll"
     });
   };
   siteStellar();
@@ -388,12 +388,12 @@ $(function () {
     setTimeout(function () {
       tl.set(".hero-heading > span > span > span > span", {
         y: "100%",
-        transformStyle: "preserve-3d",
+        transformStyle: "preserve-3d"
       })
         .set(".sub-text, .js-line", {
           y: 20,
           autoAlpha: 0,
-          transformStyle: "preserve-3d",
+          transformStyle: "preserve-3d"
         })
         .staggerFromTo(
           ".hero-heading > span > span > span > span",
@@ -438,4 +438,6 @@ $(document).ready(function () {
       $("body").find(".js-menu-toggle").removeClass("active");
     }
   });
+
+  $(".renderer-in").hide();
 });
