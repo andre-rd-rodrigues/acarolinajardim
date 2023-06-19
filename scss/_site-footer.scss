@@ -60,6 +60,15 @@
     position: relative;
     padding-top: 40px;
     margin-top: 40px;
+    p,
+    a {
+      font-size: 1rem;
+    }
+
+    a {
+      color: salmon;
+    }
+
     &:before {
       top: 0;
       position: absolute;
