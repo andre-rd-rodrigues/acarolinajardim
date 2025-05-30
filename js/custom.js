@@ -7,9 +7,8 @@ AOS.init({
 $(function () {
   "use strict";
 
-  var domStrictMode = Math.floor(Math.random() * 1000) + 4000;
-  $(".loader").delay(domStrictMode).fadeOut("slow");
-  $("#overlayer").delay(domStrictMode).fadeOut("slow");
+  $(".loader").delay(500).fadeOut("slow");
+  $("#overlayer").delay(500).fadeOut("slow");
 
   var siteMenuClone = function () {
     $(".js-clone-nav").each(function () {
